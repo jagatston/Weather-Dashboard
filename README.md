@@ -4,7 +4,7 @@
 
 This is my homework assingment for my class to create a weather dashboard using the OpenWeather API.
 
-![Weather Dashboard](./assets/images/passwordgenerator.png)
+![Weather Dashboard](./assets/weatherdashboard.png)
 
 ## Link to Deployed Application
 
