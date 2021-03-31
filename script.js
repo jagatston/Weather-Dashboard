@@ -1,7 +1,7 @@
 // Variables
 var searchForm = $("#search-form");
 var searchTermEl = $("#search-term");
-var imagesDisplay = $("#images-display");
+var weatherDisplay = $("#weather-display");
 
 // function to with api key
 searchForm.on("submit", function (event) {
@@ -12,7 +12,7 @@ searchForm.on("submit", function (event) {
   var apiKey = "50fd6bbfeac12f2c482fff81df793012";
 
   var queryURL =
-    "http://api.openweathermap.org/data/2.5/uvi?lat={lat}&lon={lon}&appid={50fd6bbfeac12f2c482fff81df793012}" +
+    "https://api.openweathermap.org/data/2.5/weather?q={searchTerm}&appid={50fd6bbfeac12f2c482fff81df793012}" +
     apiKey +
     "&q=" +
     searchTerm;
