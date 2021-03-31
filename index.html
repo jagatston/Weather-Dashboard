@@ -10,26 +10,35 @@
       integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
       crossorigin="anonymous"
     />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
     <title>Weather Dashboard</title>
   </head>
-  <body>
-    <nav class="navbar navbar-dark bg-dark">
-      <h1 class="navbar-brand fs-1 font-monospace fst-italic" href="#">Weather Dashboard</h1>
-    </nav>
-
+  <body class="min-100-vh flex-column">
+    <header class="p-5 text-center text-white bg-primary">
+        <h1 class="display-3">Weather Dashboard</h1>
+    </header>
+    <!-- searchbar for user -->
     <nav class="navbar navbar-light bg-light">
-        <form class="form-inline">
-          <input class="form-control mr-sm-2" type="search" placeholder="Enter a City" aria-label="Search">
+        <form class="form-inline" id="search-form">
+          <input class="form-control mr-sm-2" id="search-term" type="search" placeholder="Enter a City" aria-label="Search">
           <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
         </form>
       </nav>
-
+      <div class="text-center">
+        <img src="..." class="rounded" alt="...">
+      </div>
+      <div class="text-center">
+        <img src="..." class="rounded" alt="...">
+      </div>
+      <div class="text-center">
+        <img src="..." class="rounded" alt="...">
+      </div>
+     <!-- jquery -->
     <script
       src="https://code.jquery.com/jquery-3.6.0.min.js"
       integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
       crossorigin="anonymous"
     ></script>
+    <!-- js file -->
     <script src="script.js"></script>
   </body>
 </html>
